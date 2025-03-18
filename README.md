@@ -35,7 +35,7 @@ En un mundo cada vez más conectado, donde las personas buscan optimizar su tiem
 
 ---
 
-## 2. Objetivo del Proyecto
+## 2. Objetivo del proyecto
 
 El objetivo principal del bot es proporcionar una solución tecnológica que permita a los usuarios:
 
@@ -46,11 +46,11 @@ El objetivo principal del bot es proporcionar una solución tecnológica que per
 
 ---
 
-## 3. Tecnologías Utilizadas
+## 3. Tecnologías utilizadas
 
 El desarrollo del bot utiliza las siguientes tecnologías y herramientas:
 
-- **Lenguaje de Programación:** Python
+- **Lenguaje de programación:** Python
 - **Librerías:**
   - `python-telegram-bot`: Para interactuar con la API de Telegram.
   - `apscheduler`: Para gestionar recordatorios y tareas programadas.
@@ -58,23 +58,22 @@ El desarrollo del bot utiliza las siguientes tecnologías y herramientas:
 
 ---
 
-## 4. Descripción del Proyecto
+## 4. Descripción del proyecto
 
 El bot se ejecuta en Telegram y permite la interacción mediante comandos específicos. Los usuarios pueden añadir, modificar y eliminar hábitos, además de configurar recordatorios personalizados. 
-
 El bot almacena los datos temporalmente en memoria (`user_habits`), pero está diseñado para facilitar futuras extensiones como almacenamiento en bases de datos.
 
 ---
 
-## 5. Estructura del Código
+## 5. Estructura del código
 
-### **Configuración Inicial**
+### **Configuración inicial**
 - Importación de librerías y configuración de `logging`.
 
-### **Variables Globales**
+### **Variables globales**
 - `user_habits`: Diccionario para almacenar los hábitos de cada usuario.
 
-### **Definición de Comandos**
+### **Definición de comandos**
 
 - `/start`: Presenta el bot y sus funcionalidades.
 - `/add_habit`: Permite agregar un nuevo hábito.
@@ -83,17 +82,17 @@ El bot almacena los datos temporalmente en memoria (`user_habits`), pero está d
 - `/complete_habit`: Marca un hábito como completado.
 - `/set_reminder`: Configura un recordatorio diario para un hábito.
 
-### **Planificación de Recordatorios**
+### **Planificación de recordatorios**
 - Uso de `apscheduler` para gestionar tareas programadas.
 
-### **Función Principal**
+### **Función principal**
 - Inicializa el bot y gestiona la escucha de comandos mediante `run_polling()`.
 
 ---
 
-## 6. Funcionalidades Implementadas
+## 6. Funcionalidades implementadas
 
-### **Comandos Disponibles**
+### **Comandos disponibles**
 
 - **`/start`**: Presenta al usuario las instrucciones básicas del bot.
 - **`/add_habit [hábito]`**: Permite añadir un nuevo hábito.
@@ -110,7 +109,7 @@ El bot almacena los datos temporalmente en memoria (`user_habits`), pero está d
 
 ---
 
-## 7. Resultados Obtenidos
+## 7. Resultados obtenidos
 
 El bot cumple con los siguientes objetivos:
 
@@ -140,7 +139,7 @@ El bot de hábitos es una herramienta efectiva para la gestión y cumplimiento d
 - [ChatGPT](https://chatgpt.com/)
 - [AsyncAPI](https://www.asyncapi.com/docs)
 - [Repositorio del Proyecto (GitHub)](https://github.com/ManuelCM-cell/BotHabitos)
-## Tabla de Comandos y Funcionalidades
+## Tabla de comandos y funcionalidades
 
 ---
 
@@ -157,21 +156,21 @@ El bot de hábitos es una herramienta efectiva para la gestión y cumplimiento d
 
 ---
 
-## Actualización Memoria (2º Trimestre)
+## Actualización memoria (2º Trimestre)
 
-### **Mejoras Implementadas**
+### **Mejoras implementadas**
 
 - **Sistema de almacenamiento:** Se solucionó la pérdida de datos al cerrar el bot implementando un archivo JSON.
 - **Corrección de errores en `apscheduler`**: Se utilizó `asyncio` para asegurar la correcta ejecución de `send_reminder`.
 - **Verificación de zona horaria**: Se ajustó `apscheduler` para adaptarse a la zona horaria del usuario (Madrid).
 - **Validación de entradas**: Se añadieron verificaciones para evitar fallos al ingresar datos incorrectos.
 
-### **Nuevas Funcionalidades**
+### **Nuevas funcionalidades**
 
 - **Comando `/progress_report`**: Genera un reporte del progreso basado en hábitos completados.
 - **Mejoras en manejo de errores**: Validaciones para evitar comandos inválidos.
 
-### **Mejoras Futuras**
+### **Mejoras futuras**
 
 - Edición de hábitos (nombre y descripción).
 - Gráfico mejorado para visualizar progreso.
