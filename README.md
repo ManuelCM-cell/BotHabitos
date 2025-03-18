@@ -140,6 +140,20 @@ El bot de hábitos es una herramienta efectiva para la gestión y cumplimiento d
 - [ChatGPT](https://chatgpt.com/)
 - [AsyncAPI](https://www.asyncapi.com/docs)
 - [Repositorio del Proyecto (GitHub)](https://github.com/ManuelCM-cell/BotHabitos)
+## Tabla de Comandos y Funcionalidades
+
+---
+
+| Comando | Descripción |
+|---------|------------|
+| `/start` | Muestra información inicial sobre el bot. |
+| `/add_habit [hábito]` | Añade un nuevo hábito. |
+| `/list_habits` | Lista los hábitos registrados. |
+| `/delete_habit [número]` | Elimina un hábito según su número. |
+| `/complete_habit [número]` | Marca un hábito como completado. |
+| `/set_reminder [número] [hora]` | Configura un recordatorio diario. |
+| `/progress_report` | Muestra un informe del progreso del usuario. |
+
 
 ---
 
