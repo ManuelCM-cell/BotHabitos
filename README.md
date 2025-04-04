@@ -153,6 +153,15 @@ El bot de hábitos es una herramienta efectiva para la gestión y cumplimiento d
 | `/set_reminder [número] [hora]` | Configura un recordatorio diario. |
 | `/progress_report` | Muestra un informe del progreso del usuario. |
 
+| Comando | Imagen |
+|---------|--------|
+| **/start** | ![Muestra comando start](images/start.png) |
+| **/add_habit** | ![Comando addhabit](images/addhabit.png) |
+| **/delete_habit** | ![Comando deletehabit](images/deletehabit.png) |
+| **/list_habits** | ![Comando listhabits](images/listhabits.png) |
+| **/progress_report** | ![Comando progressreport](images/progressreport.png) |
+| **/set_reminder** | ![Comando setreminder](images/setreminder.png) |
+| **Lista de hábitos guardados** | ![Lista de hábitos guardados](images/doc.png) |
 
 ---
 
