@@ -1,8 +1,8 @@
-# Documentación del Proyecto: Bot de Hábitos
+# Documentación del proyecto: bot de hábitos
 
 ## Portada
 
-**Bot para el Control de Hábitos**  
+**Bot para el control de hábitos**  
 Propietario: **Manuel Conde Moreno**
 
 ---
@@ -186,3 +186,19 @@ El bot de hábitos es una herramienta efectiva para la gestión y cumplimiento d
 - Implementación de base de datos en lugar de JSON.
 
 ---
+
+## Actualización memoria (tercer trimestre)
+
+## Integración con MongoDB
+- Se sustituyó el almacenamiento local en JSON por MongoDB Atlas.
+- Se creó una colección `habits` en la base de datos `habits_db`.
+- Se agregaron funciones `get_user_habits` y `save_user_habits` para interactuar con la base de datos.
+
+## Configuración con Variables de Entorno
+- Se creó un archivo `config.py` que utiliza `os.getenv()` para obtener el token del bot y la URI de MongoDB desde variables de entorno.
+- Se agregó el archivo `ejecucion.env` para definir estas variables de entorno.
+
+## Dockerización del Proyecto
+- Se creó un `Dockerfile` para ejecutar el bot en un contenedor.
+- Se construyó la imagen con `docker build -t habitbot .`
+- Se ejecuta con `docker run --env-file ejecucion.env habitbot`
